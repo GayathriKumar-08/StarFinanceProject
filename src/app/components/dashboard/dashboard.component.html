@@ -1,0 +1,40 @@
+<div>
+<router-outlet></router-outlet>
+</div>
+
+
+<div class="container-fluid" style="background-color: #BFB9C1;">
+   
+    <div>
+        <nav class="navbar navbar-expand-sm">
+             <!------------------------------------------------------------------->
+            <div class="navbar-header">
+                <span><img class="logo" src="assets\images\logoimg.png"></span>
+                <label style="color:#581845;font-size: 30px; font-weight: bold; font-style: oblique;text-shadow: 1px 1px black;">Star Finance</label>
+            </div>
+            <!----------------------------------------------->
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                   <div class="input-icons">
+                   <i class="fas fa-search icon"></i>
+                   <input class="input-field" type="text" placeholder="Search Here...">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip"  aria-hidden="true" title="Home">
+                        <i class="fas fa-home" style="font-size: 25px;"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip"
+                        title="Help">
+                        <i class="fas fa-hands-helping" style="font-size: 25px;"></i>
+                    </a>
+                </li>
+                <li><button (click)="onclick()" class="otpbtn">Logout</button></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+

@@ -1,0 +1,303 @@
+<div>
+    <app-dashboard></app-dashboard>
+    </div>
+
+<div class="container-fluid">
+    <div class="box" style="padding: 20px;margin-top:60px;margin-left: 150px;">
+        <div class="row">
+            <div class="col-sm-4" style="margin-top: 30px;">
+                <div style="margin-left: 60px;">
+                    Branch Name:<input type="text"
+                        style=" background-color:white;border: none;border-bottom:1px solid #581845;">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2 style="text-align:center;font-size: 20px;font-weight: bold;">GOLD LOAN APPLICATION FORM</h2>
+            </div>
+            <div class="col-sm-4">
+                <div style="margin-left: 50%;">
+                    <img class="propic" [src]="urllink">
+                    <input type="file" class="btn btn-sm" (change)="selectFiles($event)">
+                </div>
+            </div>
+        </div>
+        <br>
+        <form>
+            <table style="margin-left: 70px;">
+                <tr>
+                    <td>KN Number:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Applicant's Name:</td>
+                    <td> <input type="text" style="width: 60%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Residence Address(Correspondence):</td>
+                    <td><textarea style="width: 60%;"></textarea></td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td>Pin code:</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Permanent Address:</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Pin code:</td>
+                    <td> <input type="text"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Gender:</td>
+                    <td> <input type="radio" value="Male">Male &nbsp;
+                        <input type="radio" value="Male">Female &nbsp;
+                        <input type="radio" value="Others">Others
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" style="width:100%"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Land-line Number:</td>
+                    <td> <input type="text" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Religion:</td>
+                    <td><select>
+                            <option value="select">Select</option>
+                            <option value="HINDU">HINDU</option>
+                            <option value="ISLAM">ISLAM</option>
+                            <option value="BUDHISM">BUDHISM</option>
+                            <option value="JAINISM">JAINISM</option>
+                            <option value="OTHERS">OTHERS</option>
+                        </select> &nbsp;<input type="text">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Community:</td>
+                    <td> <input type="radio" value="OBC">OBC &nbsp;
+                        <input type="radio" value="BC">BC &nbsp;
+                        <input type="radio" value="FC">FC &nbsp;
+                        <input type="radio" value="SC">SC &nbsp;
+                        <input type="radio" value="Others">Others
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Nationality:</td>
+                    <td> <input type="radio" value="Indian">Indian &nbsp;
+                        <input type="radio" value="NRI">NRI &nbsp;
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Education</td>
+                    <td><input type="text" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Occupation:</td>
+                    <td> <input type="radio" value="Salaried">Salaried &nbsp;
+                        <input type="radio" value="Self-employeed">Self-employeed &nbsp;
+                        <input type="radio" value="Agriculturist">Agriculturist &nbsp;
+                        <input type="radio" value="Others">Others &nbsp;<input type="text">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Details of Occupation: </td>
+                    <td> <input type="text" style="width: 100%;"></td>
+                </tr>
+
+                <br>
+                <tr>
+                    <td>Email Address:</td>
+                    <td> <input type="email" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Status:</td>
+                    <td> <input type="radio" value="Married">Married &nbsp;
+                        <input type="radio" value="Unmarried">Unmarried &nbsp;
+                        <input type="radio" value="others">Others
+                    </td>
+                </tr>
+
+                <br>
+                <p>Co-applicant for borrowing arrangement (if applicant’s age>=60):</p>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" style="width: 100%;"></td>
+                </tr> <br>
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Interest Payment Mode:</td>
+                    <td> <input type="checkbox" value="Monthly">Monthly &nbsp;
+                        <input type="checkbox" value=" Quarterly -Tenure">Quarterly -Tenure <input type="text"> months
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Required Loan:</td>
+                    <td> <input type="checkbox" value="Jewel-Loan">Gold-Loan &nbsp;
+                        <input type="checkbox" value="Automobile-Loan">Automobile-Loan &nbsp;
+                        <input type="checkbox" value="Housing-Loan">Housing-Loan
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Mode Of Disbursement:</td>
+                    <td> <input type="radio" value="Fund-Transfer">Fund-Transfer &nbsp;
+                        <input type="radio" value="A/c">Account &nbsp;
+                        <input type="radio" value="NEFT">NEFT &nbsp;
+                        <input type="radio" value="DD">DD &nbsp;
+                        <input type="radio" value="Cash">Cash
+                    </td>
+                </tr>
+                <br>
+                <p>If Account is selected,Enter your account details</p>
+                <tr>
+                    <td>Account No:</td>
+                    <td><input type="text" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Branch:</td>
+                    <td><input type="text" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>IFSC Code:</td>
+                    <td><input type="text" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Net Annual Income</td>
+                    <td><input type="text" style="width: 100%;"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Purpose of the loan</td>
+                    <td><textarea style="width: 60%;"></textarea></td>
+                </tr>
+                <br>
+
+                <tr>
+                    <td>
+                        How did you come to know about Star Finance:
+                    </td>
+                    <td>
+                        <input type="checkbox" value="Tele-call">Tele-call &nbsp;
+                        <input type="checkbox" value="Leaflet">Leaflet &nbsp;
+                        <input type="checkbox" value="SMS ">SMS &nbsp;
+                        <input type="checkbox" value="E-mail">E-mail
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div>
+                <ul>
+                    <li style="color: black;font-weight: bold;">I/We hereby give consent to receive calls/communication
+                        from Star Finance for marketing purposes
+                        through Telephone/Mobile/SMS/Email and that such consent shall prevail over any current or
+                        subsequent
+                        registration of your number for “Do Not Call”.</li><br>
+                    <li> I / We certify that all the information submitted above is correct.</li>
+                </ul>
+                <hr style="border:1px solid grey;width:100%;">
+                <h3 style="text-align: center;">DECLARATION</h3>
+                <ul>
+                    <li>
+                        I/We the applicant/s have read the terms and conditions of the Bank and agree to be bound by the
+                        same. I/We also understand
+                        that the grant of loan is subject to the Bank’s discretion.
+                    </li>
+                    <li>
+                        I/We further declare that i/we are not director or specified near relation of a director of any
+                        Banking Company.
+                    </li>
+                </ul>
+            </div>
+        </form>
+        <div class="row" style="margin-left: 40px;">
+            <div class="col-sm6">
+                Place: <input type="text" style="border:none;border-bottom: 1px solid black;">
+            </div>
+            <div class="col-sm6" style="margin-left: 60%;">
+                Date: <input type="date" style="border:none;border-bottom: 1px solid black;">
+            </div>
+        </div>
+        <br>
+        <div class="row" style="margin-left: 70px;">
+            <div class="col-sm-6">
+                <div>
+                    <img class="propic1" [src]="urllink1"><br>
+                    <input type="file" class="btn btn-sm" (change)="selectFiles1($event)">
+                </div>
+                <p style="margin-left: 40px;">Applicant</p>
+            </div>
+            <div class="col-sm-6">
+                <div style="margin-left: 60%;">
+                    <img class="propic1" [src]="urllink2"><br>
+                    <input type="file" class="btn btn-sm" (change)="selectFiles2($event)">
+                </div>
+                <p style="margin-left:70%;">Co-Applicant</p>
+            </div>
+        </div>
+        <hr style="border:1px solid grey;width:100%;">
+        <h3 style="text-align: center;">REFERENCES</h3>
+
+        <div class="row" style="margin-left: 60px;">
+            <div class="col-sm-6">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td>phoneNumber:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div style="margin-left: 40%;">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;"></td>
+                        </tr>
+                        <tr>
+                            <td>phoneNumber:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;"></td>
+                        </tr>
+                    </table>
+    
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,92 @@
+.logo
+{
+   width:60px;
+   height:60px;
+}
+.navbar-nav
+{
+    margin-left: 70%; 
+}
+.line1
+{
+    border: none;
+    border-left: #581845;
+    height: 10px;
+    width: 10px;
+}
+.line
+{
+    background-color:#581845;
+    height:10px;
+
+}
+.loginbox
+{
+    border:1px solid grey;
+    width:40%;
+    height:40%;
+    margin-top:80px;
+    margin-left:30%;
+    padding:20px;
+    box-shadow: 5px 5px 5px grey;
+    color:#581845
+}
+.pnobox
+{
+    margin:10%;
+    margin-right: 30%;
+    border: none;
+    width:70%;
+    border-bottom: 1px solid #581845;
+}
+.pnobox:hover{
+    border: none;
+    border-bottom: 3px solid #581845;
+    width: 70%;
+}
+input:focus
+{
+    outline:none
+}
+button:focus
+{
+    outline:none
+}
+.logoimage
+{
+    width:60%;
+    height:80%;
+    margin-top:60px;
+    margin-left:190px;
+}
+.otpbtn
+{ 
+   background-color: #581845;
+   width: 25%;
+   padding:10px;
+   border-radius:  1.5em;
+   color:white;
+}
+.otpbtn1
+{
+   background-color: #581845;
+   width: 25%;
+   padding:10px;
+   border-radius:  1.5em;
+   color:white;
+}
+/**.otpbtn1:hover
+{ 
+    background-color: #581845;
+    width: 40%;
+    padding:10px;
+    box-shadow: 2px 2px 2px solid grey;
+    border-radius: 10px;
+    color:white;
+}**/
+.navreg
+{
+    margin-left: 20px;
+    color:#581845;
+}
+

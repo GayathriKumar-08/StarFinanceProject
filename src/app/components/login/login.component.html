@@ -1,0 +1,82 @@
+<div class="container-md mt-3">
+    <div>
+      <nav class="navbar navbar-expand-sm">
+        <div class="navbar-header">
+          <span><img class="logo" src="assets\images\logoimg.png"></span><label
+            style="color:#581845; font-size: 30px;">Star Finance</label>
+        </div>
+        <ul class="navbar-nav">
+  
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip" title="Home">
+              <i class="fas fa-home" style="font-size: 25px;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip" title="Help">
+              <i class="fas fa-hands-helping" style="font-size: 25px;"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip" title="Login">
+              <i class="fas fa-sign-in-alt" style="font-size: 25px;"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  
+    <div class="line"></div>
+  
+    <!--<div class="row">
+      <div class="col-md-6">
+        <img class="logoimage" src="assets\images\logoimg.png">
+      </div>-->
+   
+    <div>
+      <div class="loginbox" style="justify-content: center;">
+        <h3 style="text-align: center;">Login</h3>
+        <div class="pnobox">
+          <span><i class="fas fa-mobile-alt"></i></span>
+          <input type="text" style="border:none; width:90%;" placeholder=" +91-8021489201">
+        </div>
+        <div class="d-flex justify-content-center mt-3">
+          <button type="button" class="otpbtn" (click)="onSendOtp()">Send OTP</button>
+        </div>
+  
+        <!----- <button type="button" class="otpbtn">Resend OTP</button>-->
+        <br>
+        <div  *ngIf="isVisible">
+          <p style="font-size: 18px; margin-left: 58px;">Enter the 4-digit verification code we sent via SMS</p>
+          <div id="form" style="text-align: center;">
+            <ng-otp-input [config]="{length:4}"></ng-otp-input>
+  
+          <!--  <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+            <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />-->
+          </div>
+        <br>
+          <div style="margin-left: 10%;">
+            Didn't receive the code?
+            <a href="#" style="color:#168ACF;">Resend OTP</a> |
+            <a href="#" style="color:#168ACF;">Change phone number</a>
+          </div>
+  
+  
+        </div>
+        <div class="d-flex justify-content-center mt-3" *ngIf="isVisible">
+          <button type="button" class="otpbtn1" style="margin-bottom: 10px;" (click)="onClick()">Login</button>
+        </div>
+  
+        <div class="mt-4" *ngIf="removeSignup">
+          <div class="d-flex justify-content-center links">
+            Don't have an account? <a  routerLink="/register" class="ml-2">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  

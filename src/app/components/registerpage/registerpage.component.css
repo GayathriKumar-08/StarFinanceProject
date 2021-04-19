@@ -1,0 +1,47 @@
+.logo
+{
+   width:60px;
+   height:60px;
+}
+.navbar-nav
+{
+    margin-left: 70%; 
+}
+.line
+{
+    background-color:#581845;
+    height:10px;
+}
+.loginbox
+{
+    background-color:#BFB9C1;
+    border:1px solid grey;
+    width:40%;
+    height:40%;
+    margin-top:80px;
+    margin-left:30%;
+    padding:25px;
+    box-shadow: 5px 5px 5px grey;
+    color:#581845
+}
+.pnobox
+{
+    margin:10%;
+    margin-right: 30%;
+    border: none;
+    width:70%;
+    border-bottom: 1px solid #000000;
+}
+.otpbtn
+{ 
+   background-color: #581845;
+   width: 25%;
+   margin-left: 200px;
+   padding:9px;
+   border-radius:1.5rem;;
+   color:white;
+}
+button:focus
+{
+    outline:none
+}

@@ -1,0 +1,78 @@
+.logo
+{
+   width:60px;
+   height:60px;
+}
+.navbar-nav
+{
+    margin-left: 55%; 
+}
+input:focus
+{
+    outline:none
+}
+button:focus
+{
+    outline:none
+}
+.otpbtn
+{ 
+   background-color: #581845;
+   width:100px;
+   padding:5px;
+   border-radius: 1.5em;
+   color:white;
+}
+.navi a 
+{
+   color:white;
+   display: block;
+   font-size: 17px;
+   font-weight: 500;
+   padding: 15px 20px;
+   text-decoration: none;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.navi i {
+    margin-right: 15px;
+    color: white;
+}
+
+.navi a:hover {
+    background: #aa3c89 none repeat scroll 0 0;
+    display: block;
+    padding-left: 15px;
+}
+ .input-field:focus {
+    border: 2px solid #920668;
+  }
+
+  .input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    padding: 10px;
+    min-width: 40px;
+    color: #920668;
+}
+  
+.input-field {
+    padding: 5px;
+    text-align: center;
+}
+/**#grad1
+{
+    height: 00px;
+  background-color:purple; 
+  background-image: linear-gradient(to right, white , purple);
+}**/
