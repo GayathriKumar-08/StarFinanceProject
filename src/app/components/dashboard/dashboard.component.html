@@ -1,40 +1,36 @@
 <div>
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </div>
+    <header id="header" class="fixed-top d-flex align-items-center ">
+        <div class="container d-flex align-items-center justify-content-between">
 
-
-<div class="container-fluid" style="background-color: #BFB9C1;">
-   
-    <div>
-        <nav class="navbar navbar-expand-sm">
-             <!------------------------------------------------------------------->
-            <div class="navbar-header">
-                <span><img class="logo" src="assets\images\logoimg.png"></span>
-                <label style="color:#581845;font-size: 30px; font-weight: bold; font-style: oblique;text-shadow: 1px 1px black;">Star Finance</label>
+            <div class="logo">
+                <h1 style="color: white;">Star Finance</h1>
             </div>
-            <!----------------------------------------------->
-            <ul class="navbar-nav">
-               <li class="nav-item">
-                   <div class="input-icons">
-                   <i class="fas fa-search icon"></i>
-                   <input class="input-field" type="text" placeholder="Search Here...">
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip"  aria-hidden="true" title="Home">
-                        <i class="fas fa-home" style="font-size: 25px;"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:#581845;font-size: 18px;" data-toggle="tooltip"
-                        title="Help">
-                        <i class="fas fa-hands-helping" style="font-size: 25px;"></i>
-                    </a>
-                </li>
-                <li><button (click)="onclick()" class="otpbtn">Logout</button></li>
-            </ul>
-        </nav>
-    </div>
-</div>
 
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a  routerLink="/dashboard" style="color:white" class="nav-link scrollto active">Home</a></li>
+                    <li><a href="#about" style="color:white;" class="nav-link scrollto"></a></li>
+                    <li><a style="color:white;" class="nav-link scrollto" href="#services">Services</a></li>
 
+                    <li style="color:white;" class="dropdown"><a style="color:white;" href="#"><span>KYC Verification</span>
+                         <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">KYC Documents</a></li>
+
+                            <li><a href="#">Document Upload</a></li>
+                        </ul>
+                    <li style="color:white;" class="dropdown"><a style="color:white;" href="#"><span>Loan Form</span>
+                        <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a routerLink="/loanform">loanform</a></li>
+
+                            <li><a href="#">Document Upload</a></li>
+                        </ul>
+                    </li>
+                    <li><button (click)="onclick()" class="otpbtn">Logout</button></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+        </div>
