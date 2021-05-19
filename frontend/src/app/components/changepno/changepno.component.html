@@ -1,0 +1,48 @@
+<div>
+    <app-samplenav></app-samplenav>
+</div>
+<div class="container">
+    <div class="loginbox" style="justify-content: center;">
+        <h3 style="text-align: center;">Change Password</h3>
+        <form name="form" [formGroup]="form">
+            <div class="pnobox"><br>
+                <div>
+                    <label style="font-size:18px;">Enter the current Phone-number</label>
+                    <input type="text" formControlName="oldpno" class="form-control"
+                        [ngClass]="{'is-invalid': form.get('oldpno').touched && form.get('oldpno').invalid}" />
+
+
+                    <div *ngIf="{'is-invalid': form.get('oldpno').touched && form.get('oldpno').invalid}"
+                        class="invalid-feedback">
+                        <div *ngIf="form.get('oldpno').errors.required" style="color: crimson;">Required*</div>
+                        <div *ngIf="form.get('oldpno').errors.pattern" style="color: crimson;">Cannot contains alphabets*</div>
+                        <div *ngIf="form.get('oldpno').errors.minlength" style="color: crimson;">Incorrect phone number*</div>
+                        <div *ngIf="form.get('oldpno').errors.maxlength" style="color: crimson;">Incorrect phone number*</div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div><label style="font-size:18px;">Enter the new Phone-numberto be Changed </label>
+                    <input type="text" formControlName="newpno" class="form-control" 
+                    [ngClass]="{'is-invalid': form.get('newpno').touched && form.get('newpno').invalid}" />
+
+                    <div *ngIf="{'is-invalid': form.get('newpno').touched && form.get('newpno').invalid}"
+                    class="invalid-feedback">
+                    <div *ngIf="form.get('newpno').errors.required" style="color: crimson;">Required*</div>
+                    <div *ngIf="form.get('newpno').errors.pattern" style="color: crimson;">Cannot contains alphabets*</div>
+                    <div *ngIf="form.get('newpno').errors.minlength" style="color: crimson;">Incorrect phone number*</div>
+                    <div *ngIf="form.get('newpno').errors.maxlength" style="color: crimson;">Incorrect phone number*</div>
+                    </div>
+
+                </div>
+                <div>
+                    <button class="otpbtn">Change Phone-number</button>
+                </div>
+            <br>
+        </form>
+    </div>
+    <br>
+
+    
+   
+</div>

@@ -1,0 +1,316 @@
+<div>
+    <app-navsection></app-navsection>
+</div> 
+<div class="container-fluid">
+    <div class="box" style="padding: 20px;margin-top:60px;margin-left: 150px;">
+        <div class="row">
+            <div class="col-sm-4" style="margin-top: 30px;">
+                <div style="margin-left: 60px;">
+                    Branch Name:<input type="text"
+                        style=" background-color:white;border: none;border-bottom:1px solid #581845;" [(ngModel)]="loan.branch_name" >
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2 style="text-align:center;font-size: 20px;font-weight: bold;">GOLD LOAN APPLICATION FORM</h2>
+            </div>
+            <div class="col-sm-4">
+                <div style="margin-left: 50%;">
+                    
+                    <img class="propic" [src]="urllink">
+
+                    <input type="file" class="btn btn-sm" (change)="selectFiles($event)">
+                </div>
+            </div>
+        </div>
+        <br>
+            <table style="margin-left: 70px;">
+                <tr>
+                    <td>Loan Id : </td>
+                    <td> <input type="text" style="width: 60%;" [(ngModel)]="loanId" ></td>
+                </tr>
+                <tr>
+                    <td>Applicant's Name:</td>
+                    <td> <input type="text" style="width: 60%;" [(ngModel)]="loan.applicant_name" ></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Residence Address(Correspondence):</td>
+                    <td><textarea style="width: 60%;" [(ngModel)]="loan.tAddr"></textarea></td>
+                </tr>
+                <br>
+                <br>
+                <tr>
+                    <td>Pin code:</td>
+                    <td> <input type="text" [(ngModel)]="loan.tpin"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Permanent Address:</td>
+                    <td> <input type="text" [(ngModel)]="loan.pAddr"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Pin code:</td>
+                    <td> <input type="text" [(ngModel)]="loan.ppin"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" [(ngModel)]="loan.date_of_birth"></td>
+                </tr>
+                <br>
+                <tr>
+                   <td>Gender : </td>
+                   <td><input type="radio" name="gen" value="Male" [(ngModel)]="loan.gender">Male
+                    <input type="radio" name="gen" value="Female" [(ngModel)]="loan.gender">Female
+                    <input type="radio" name="gen" value="Others" [(ngModel)]="loan.gender">Others
+                </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" style="width:100%" [(ngModel)]="loan.phone_number"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Land-line Number:</td>
+                    <td> <input type="text" style="width: 100%;" [(ngModel)]="loan.landline"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Religion:</td>
+                    <td><select [(ngModel)]="loan.religion">
+                            <option value="select">Select</option>
+                            <option value="HINDU">HINDU</option>
+                            <option value="ISLAM">ISLAM</option>
+                            <option value="BUDHISM">BUDHISM</option>
+                            <option value="JAINISM">JAINISM</option>
+                            <option value="OTHERS">OTHERS</option>
+                        </select> &nbsp;<input type="text">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Community:</td>
+                    <td> <input type="radio" value="OBC" [(ngModel)]="loan.community" name="comm">OBC &nbsp;
+                        <input type="radio" value="BC" [(ngModel)]="loan.community" name="comm">BC &nbsp;
+                        <input type="radio" value="FC" [(ngModel)]="loan.community" name="comm">FC &nbsp;
+                        <input type="radio" value="SC" [(ngModel)]="loan.community" name="comm">SC &nbsp;
+                        <input type="radio" value="Others" [(ngModel)]="loan.community" name="comm">Others
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Nationality:</td>
+                    <td> <input type="radio" value="Indian" name="nat" [(ngModel)]="loan.nationality">Indian &nbsp;
+                        <input type="radio" value="NRI" name="nat"    [(ngModel)]="loan.nationality">NRI &nbsp;
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Education</td>
+                    <td><input type="text" style="width: 100%;" [(ngModel)]="loan.education"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Occupation:</td>
+                    <td> <input type="radio" value="Salaried" name="occ" [(ngModel)]="loan.occupation" >Salaried &nbsp;
+                        <input type="radio" value="Self-employeed" name="occ" [(ngModel)]="loan.occupation">Self-employeed &nbsp;
+                        <input type="radio" value="Agriculturist" name="occ" [(ngModel)]="loan.occupation">Agriculturist &nbsp;
+                        <input type="radio" value="Others" name="occ" [(ngModel)]="loan.occupation">Others &nbsp;<input type="text">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Details of Occupation: </td>
+                    <td> <input type="text" style="width: 100%;" [(ngModel)]="loan.deoccupation"></td>
+                </tr>
+
+                <br>
+                <tr>
+                    <td>Email Address:</td>
+                    <td> <input type="email" style="width: 100%;" [(ngModel)]="loan.email_id"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Status:</td>
+                    <td> <input type="radio" name="status" value="Married" [(ngModel)]="loan.martial_status">Married &nbsp;
+                        <input type="radio" name="status" value="Unmarried" [(ngModel)]="loan.martial_status">Unmarried &nbsp;
+                        <input type="radio" name="status" value="others" [(ngModel)]="loan.martial_status">Others
+                    </td>
+                </tr>
+
+                <br>
+                <p>Co-applicant for borrowing arrangement (if applicant’s age>=60):</p>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" style="width: 100%;" [(ngModel)]="loan.applicant_name"></td>
+                </tr> <br>
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date" [(ngModel)]="loan.date_of_birth"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Interest Payment Mode:</td>
+                    <td> <input type="radio" name="pay" value="Monthly" [(ngModel)]="loan.payment_mode">Monthly &nbsp;
+                        <input type="radio" name="pay" value=" Quarterly -Tenure" [(ngModel)]="loan.payment_mode">Quarterly -Tenure <input type="text"> months
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Required Loan:</td>
+                    <td> <input type="radio" value="Jewel-Loan" name="loan" [(ngModel)]="loan.requiredLoan">Gold-Loan &nbsp;
+                        <input type="radio" value="Automobile-Loan" name="loan" [(ngModel)]="loan.requiredLoan">Automobile-Loan &nbsp;
+                        <input type="radio" value="Housing-Loan" name="loan" [(ngModel)]="loan.requiredLoan">Housing-Loan
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Mode Of Disbursement:</td>
+                    <td> <input type="radio" value="Fund-Transfer" [(ngModel)]="loan.mode_of_disbursal">Fund-Transfer &nbsp;
+                        <input type="radio" value="A/c" [(ngModel)]="loan.mode_of_disbursal">Account &nbsp;
+                        <input type="radio" value="NEFT" [(ngModel)]="loan.mode_of_disbursal">NEFT &nbsp;
+                        <input type="radio" value="DD" [(ngModel)]="loan.mode_of_disbursal"> DD &nbsp;
+                        <input type="radio" value="Cash" [(ngModel)]="loan.mode_of_disbursal">Cash
+                    </td>
+                </tr>
+                <br>
+                <p>If Account is selected,Enter your account details</p>
+                <tr>
+                    <td>Account Holder Name :</td>
+                    <td><input type="text" style="width: 100%;" [(ngModel)]="loan.account_holder_name"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Account No:</td>
+                    <td><input type="number" style="width: 100%;" [(ngModel)]="loan.account_number"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Branch:</td>
+                    <td><input type="text" style="width: 100%;" [(ngModel)]="loan.branch_name"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>IFSC Code:</td>
+                    <td><input type="text" style="width: 100%;" [(ngModel)]="loan.ifsc_code"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Net Annual Income</td>
+                    <td><input type="text" style="width: 100%;" [(ngModel)]="loan.annual_income"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Purpose of the loan</td>
+                    <td><textarea style="width: 60%;" [(ngModel)]="loan.purpose"></textarea></td>
+                </tr>
+                <br>
+
+                <tr>
+                    <td>
+                        How did you come to know about Star Finance:
+                    </td>
+                    <td>
+                        <input type="radio" value="Tele-call" name="know" [(ngModel)]="loan.contact">Tele-call &nbsp;
+                        <input type="radio" value="Leaflet" name="know" [(ngModel)]="loan.contact">Leaflet &nbsp;
+                        <input type="radio" value="SMS " name="know" [(ngModel)]="loan.contact">SMS &nbsp;
+                        <input type="radio" value="E-mail" name="know" [(ngModel)]="loan.contact">E-mail
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <div>
+                <ul>
+                    <li style="color: black;font-weight: bold;">I/We hereby give consent to receive calls/communication
+                        from Star Finance for marketing purposes
+                        through Telephone/Mobile/SMS/Email and that such consent shall prevail over any current or
+                        subsequent
+                        registration of your number for “Do Not Call”.</li><br>
+                    <li> I / We certify that all the information submitted above is correct.</li>
+                </ul>
+                <hr style="border:1px solid grey;width:100%;">
+                <h3 style="text-align: center;">DECLARATION</h3>
+                <ul>
+                    <li>
+                        I/We the applicant/s have read the terms and conditions of the Bank and agree to be bound by the
+                        same. I/We also understand
+                        that the grant of loan is subject to the Bank’s discretion.
+                    </li>
+                    <li>
+                        I/We further declare that i/we are not director or specified near relation of a director of any
+                        Banking Company.
+                    </li>
+                </ul>
+            </div>
+        <div class="row" style="margin-left: 40px;">
+            <div class="col-sm6">
+                Place: <input type="text" style="border:none;border-bottom: 1px solid black;" value="chennai" >
+            </div>
+            <div class="col-sm6" style="margin-left: 850px;">
+                Date: <input type="date" style="border:none;border-bottom: 1px solid black;" value="18-05-2021">
+            </div>
+        </div>
+        <br>
+        <div class="row" style="margin-left: 70px;">
+            <div class="col-sm-6">
+                <div>
+                    <img class="propic1" [src]="urllink1"><br>
+                    <input type="file" class="btn btn-sm" (change)="selectFiles1($event)">
+                </div>
+                <p style="margin-left: 40px;">Applicant</p>
+            </div>
+            <div class="col-sm-6">
+                <div style="margin-left: 60%;">
+                    <img class="propic1" [src]="urllink2"><br>
+                    <input type="file" class="btn btn-sm" (change)="selectFiles2($event)">
+                </div>
+                <p style="margin-left:70%;">Co-Applicant</p>
+            </div>
+        </div>
+        <hr style="border:1px solid grey;width:100%;">
+        <h3 style="text-align: center;">REFERENCES</h3>
+
+        <div class="row" style="margin-left: 60px;">
+            <div class="col-sm-6">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;" [(ngModel)]="loan.applicant_name"></td>
+                        </tr>
+                        <tr>
+                            <td>phoneNumber:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;" [(ngModel)]="loan.phone_number"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div style="margin-left: 40%;">
+                    <table>
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;" [(ngModel)]="loan.applicant_name"></td>
+                        </tr>
+                        <tr>
+                            <td>phoneNumber:</td>
+                            <td><input type="text" style="border:none;border-bottom: 1px solid black;" [(ngModel)]="loan.phone_number"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div style="margin-top:30px;margin-left: 400px;">
+                <table>
+                    <tr>
+                        <td>
+                            <button style="background-color: #581845;color: white;padding: 8px; width:100px;border-radius: 15px;" (click)="fetchData()">Fetch Data</button>
+                        </td>&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                    </tr>
+                </table>
+               
+            </div>
+        </div>
+   

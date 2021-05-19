@@ -1,0 +1,50 @@
+<div>
+    <app-navsection></app-navsection>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="card" style="margin-top: 200px;border-color:#581845;padding:10px; width:650px;">
+                <div class="card-header" style="border-color:#581845;color:#581845;font-weight: bold;">
+                    EMI Calculator
+                </div>
+                <div class="card-body" style="border-color:#581845;">
+                    <div class="page" style="border-color:#581845;">
+                        <label class="field field_v1">
+                            <input class="field__input" type="number" placeholder="e.g.70000" style="border-color:#581845;"[(ngModel)]="loanamt">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Loan Amount</span>
+                            </span>
+                        </label>
+                        <label class="field field_v2">
+                            <input class="field__input" type="number" placeholder="e.g. 3" style="border-color:#581845;" [(ngModel)]="loanten">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Loan Tenure(Months)</span>
+                            </span>
+                        </label>
+                        <label class="field field_v3">
+                            <input class="field__input" type="number" placeholder="Emi amt" [value]="emi" style="border-color:#581845;">
+                            <span class="field__label-wrap">
+                                <span class="field__label">Monthly EMI</span>
+                            </span>
+                        </label>
+                    </div>
+                    <br>
+                    <button class="btn" (click)="onClick()">Calculate</button>
+                </div>
+               
+            </div>
+        </div>
+        <div class=col-sm-2></div>
+
+         <div class="col-sm-4"style="margin-top: 200px;">
+                    <div class="card-body">
+                        <div class="imgbox">
+                           <img src="assets\images\calculator.gif"  style="width: 400px; height:400px;">
+                        </div> 
+               </div>
+         </div>
+        
+    </div>
+</div>

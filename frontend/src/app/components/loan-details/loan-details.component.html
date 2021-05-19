@@ -1,0 +1,81 @@
+<div>
+  <app-navsection></app-navsection>
+</div>
+
+
+<html>
+    <head></head>
+    <body style="margin-top: 150px;">
+        <table>
+          <tr><td>Search By Loan Type : </td> <td> <input type="radio" value="Jewel-Loan" name="loan" [(ngModel)]="requiredLoan">Gold-Loan &nbsp;
+            <input type="radio" value="Automobile-Loan" name="loan" [(ngModel)]="requiredLoan">Automobile-Loan &nbsp;
+            <input type="radio" value="Housing-Loan" name="loan" [(ngModel)]="requiredLoan">Housing-Loan
+        </td></tr>
+            <tr><td>Generate Loan Application Details</td>&nbsp;&nbsp;&nbsp;<td><button type="button" class="btn btn-success" (click)="fetchDetails()">Fetch Details</button></td>
+              <td><button type="button" class="btn btn-success" (click)="fetchDetailsByIncome()">Fetch Details By Income</button></td>    <td><button type="button" class="btn btn-success" (click)="generatePDF()">Generate PDF</button></td></tr>
+          <br> <td><button type="button" class="btn btn-success" (click)="fetchByLoan()">Fetch By Loan Type</button></td>
+            </table>
+        <div id="content">
+            <div></div>
+            </div>
+          
+        <table class="table table-success table-striped" id="tableCon" border="1">
+            <tr><td colspan="23" style="font-family: 'Franklin Gothic Medium';font-weight: bold;font-size:30px;color:darkblue;text-align: center;">Loan Applicant Details</td></tr>
+              <tr>
+                <th scope="col">Applicant Name</th>
+                <th scope="col">Date of Birth</th>
+                <th scope="col">Age</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Landline</th>
+                <th scope="col">Religion</th>
+                <th scope="col">Community</th>
+                <th scope="col">Nationality</th>
+                <th scope="col">Email-Id</th>
+                <th scope="col">Martial Status</th>
+                <th scope="col">Education</th>
+                <th scope="col">Annual Income</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Account Holder Name</th>
+                <th scope="col">Account Number</th>
+                <th scope="col">Branch Name</th>
+                <th scope="col">IFSC Code</th>
+                <th scope="col">Payment Mode</th>
+                <th scope="col">Mode of Disbursal</th>
+                <th scope="col">Occupation</th>
+                <th scope="col">Required Loan</th>
+                <th scope="col">Address</th>
+                <th scope="col">Pincode</th>
+              </tr>
+            <tbody>
+            <tr *ngFor="let val of loan">
+                <td>{{val.applicant_name}}</td>
+                <td>{{val.date_of_birth}}</td>
+                <td>{{val.age}}</td>
+                <td>{{val.gender}}</td>
+                <td>{{val.phone_number}}</td>
+                <td>{{val.landline}}</td>
+                <td>{{val.religion}}</td>
+                <td>{{val.community}}</td>
+                <td>{{val.nationality}}</td>
+                <td>{{val.email_id}}</td>
+                <td>{{val.martial_status}}</td>
+                <td>{{val.education}}</td>
+                <td>{{val.annual_income}}</td>
+                <td>{{val.purpose}}</td>
+                <td>{{val.account_holder_name}}</td>
+                <td>{{val.account_number}}</td>
+                <td>{{val.branch_name}}</td>
+                <td>{{val.ifsc_code}}</td>
+                <td>{{val.payment_mode}}</td>
+                <td>{{val.mode_of_disbursal}}</td>
+                <td>{{val.occupation}}</td>
+                <td>{{val.requiredLoan}}</td>
+                <td>{{val.pAddr}}</td>
+                <td>{{val.ppin}}</td>
+            </tr>
+            </tbody>
+          </table>
+          
+    </body>
+</html>

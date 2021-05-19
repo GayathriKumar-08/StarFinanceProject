@@ -1,0 +1,500 @@
+<html><head>
+  <link rel="stylesheet" href="E:\Angular\login\src\assets\css\style.css">
+</head></html>
+<header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+  
+      <div class="logo">
+        <h1><a href="">Star Finance</a></h1>
+  
+      </div>
+  
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero"style="color:white" class="nav-link scrollto active" >Home</a></li>
+          <li><a href="#about" style="color:white;" class="nav-link scrollto" >About</a></li>
+          <li><a style="color:white;" class="nav-link scrollto" href="#services">Services</a></li>
+  
+  
+          <li style="color:white;"class="dropdown"><a  style="color:white;"href="#"><span>Login</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="/newlogin"> Login | Register</a></li>
+
+            </ul>
+          </li>
+          <li><a style="color:white;" class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+  
+    </div>
+  </header>
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+  
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Star Finance</span></h2>
+          <p class="animate__animated animate__fadeInUp">Star Finance is a passionate, clever, solution-driven mortgage
+            broker that listens to your needs and delivers you the right mortgage at the right time at the right price.
+          </p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+  
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Gold Loan</h2>
+          <p class="animate__animated animate__fadeInUp">
+            Gold loans by Star Finance allow you to access funds in lieu of your gold jewellery, ornaments, etc. If you are unable to get credit from banking channels or are unable to get the exact amount you need, a gold loan is the easiest way to meet your financial needs..</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+  
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">eKYC</h2>
+          <p class="animate__animated animate__fadeInUp">We verify your Aadhar card with UIDAI through OTP or Fingerprint scanning and thus complete your KYC online. Once Aadhar authentication is done, you do not need to submit any other KYC document. Additonally, your loan application also get pre-filled with your Aadhar details making your loan processing faster.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+  
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+  
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+  
+    </div>
+  
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use>
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use>
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
+      </g>
+    </svg>
+  
+  </section>
+  <main id="main">
+  
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+  
+        <div class="section-title" data-aos="zoom-out">
+          <h2>About</h2>
+          <p>Who we are</p>
+        </div>
+  
+        <div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <p>
+              At Star Finance we are an authentic, customer-focused mortgage broking team and we are all about solutions.
+              We are all about delivering the best possible outcome for you by way of a great mortgage.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> The Star Finance team is highly qualified, built upon genuine
+                expertise</li>
+              <li><i class="ri-check-double-line"></i>  We allow you to access funds in lieu of your gold jewellery,ornaments, etc.</li>
+              <li><i class="ri-check-double-line"></i> We ensures complete ease and total customer satisfaction when it comes to availing a gold loan.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Gone are the days when you had to wait endlessly and bear troublesome process of taking a loan.If you’re looking for an easy and quick way to get financing, Star Finance Gold loan is just what you’re looking for. Now you can take the loan against gold ornaments and get relieved of your immediate requirements. While your gold stays safe with us, you can go ahead and take advantage of every opportunity.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+  
+      </div>
+    </section><!-- End About Section -->
+  
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+  
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3" data-aos="zoom-in">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">What is gold loan?</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">Why to choose a gold loan?</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="ri-sun-line"></i>
+              <h4 class="d-none d-lg-block">Gold loan Features</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+              <i class="ri-store-line"></i>
+              <h4 class="d-none d-lg-block">Things To Know</h4>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Gold loan is a type of secured loan</h3>
+                <p class="fst-italic">
+                  the loan is provided against collateral in the form of different types of gold jewellery or gold coins
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i>  The amount of loan against gold you will get depends upon the value of the gold you surrender for the loan.</li>
+                  <li><i class="ri-check-double-line"></i>You can avail several gold loan schemes from banks and other financial institutions. 
+                  </li>
+                  <li><i class="ri-check-double-line"></i>You have to deposit your gold with the lender i.e. NBFC or bank and you get the deposited gold ornaments or coins back only after you have paid back the loan amount in full including interest.</li>
+                </ul>
+                <p>
+                  This loan is a good option, if you are looking for instant liquidity. Also, since the approval of this loan does not depend upon your credit history or income, you need not worry about your adversely impacting your credit score nor scramble for income proofs for loan approval.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3> Gold loan can be a better choice if you can repay the loan in a shorter duration and also have a lower interest rate.</h3>
+                
+                <p class="fst-italic">
+                  A few reasons for the popularity loan against gold are as follows:
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i>Gold loans feature a low interest rate as compared to most other loan options</li>
+                  <li><i class="ri-check-double-line"></i> Gold Loans tenure ranges from a few days to 5 years or more depending upon the lender.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> The repayment options on gold loan can be selected as per the choice of the borrower.</li>
+                  <li><i class="ri-check-double-line"></i>In most cases, the lender does not charge a pre-payment penalty on gold loans. Minimal documentation required and PAN Card is not mandatory for this loan</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>An investment, worthy of its name, gold comes in handy when one requires instant funds.</h3>
+                <p>
+                  You can take out a Gold Loan from your bank, by pledging your gold jewellery or coins. The gold serves as collateral with the bank until the loan is repaid in full
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> It is a secured loan. Therefore, there is no requirement of a good credit history to avail a gold loan.</li>
+                  <li><i class="ri-check-double-line"></i> For those of you involved in agriculture, gold loan schemes can be availed at a reduced rate of interest which can be as low as 8%
+                  </li>
+                  <li><i class="ri-check-double-line"></i> The loan disbursal time can be as short as 30 minutes..</li>
+                </ul>
+                <p class="fst-italic">
+                  Since your gold is the collateral, which is deposited with the lender, the paper work involved is bare minimum. All you require is your personal id and address proof
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Gold loans tenure are usually short, ranging from a period of 1 year to a maximum of 2 years</h3>
+                <p>
+                 
+                </p>
+                <p class="fst-italic">
+                  
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Lending institutions offer loan of up to 75% of the gold value, after checking the metal for purity and ascertaining the market gold prices.</li>
+                  <li><i class="ri-check-double-line"></i>If the ornaments provided feature precious stones, they are valued only on the basis of the weight of gold in the ornaments.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> While gold jewelry is perfectly acceptable to any bank or NBFC as collateral, bars are not accepted and only specific types of gold coins are accepted as collateral by banks only.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-3.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section><!-- End Features Section -->
+  
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+  
+        <div class="row" data-aos="zoom-out">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Gold loan calculator</h3>
+            <p> Fulfill your dreams by taking a loan against Gold!
+  
+              Get a loan at attractive rates with minimum documentation. Use this Gold Loan Calculator, to work out your EMIs and tenure.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" routerLink="/emical">Gold loan calculator</a>
+          </div>
+        </div>
+  
+      </div>
+    </section><!-- End Cta Section -->
+  
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+  
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Services</h2>
+          <p>What we do offer</p>
+        </div>
+      
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="icon-box" data-aos="zoom-in-left" >
+              <div class="icon"><i class="bi bi-book-half" style="color: #ff689b;margin-left:30px;font-size:50px"></i></div>
+              <h4 class="title"><a href="">PROPERTY LOAN</a></h4>
+              <p class="description" >Easy and hassle free documentation, Simple repayments through monthly instalments and Longer tenure, smaller EMIs</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-calendar2-week" style="color: #e9bf06;margin-left:30px;font-size:50px"></i></div>
+              <h4 class="title"><a href="">EMI SCHEMES</a></h4>
+              <p class="description">Designed for EMI payments,Loan Amount: Starting at ₹20,000
+                </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mt-5 mt-lg-0 ">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-house-fill" style="color: #3fcdc7;font-size:50px;margin-left:30px"></i></div>
+              <h4 class="title"><a href="">HOME LOAN</a></h4>
+              <p class="description">Easy home loan eligibility criteria and minimial documentation,to help you get your loan faster</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-percent" style="color:#41cf2e;font-size:50px;margin-left:30px"></i></div>
+              <h4 class="title"><a href="">ONE PERCENT LOAN</a></h4>
+              <p class="description">Small loans at low interest rates.Loan Amount: ₹1,500 to ₹50,000</p>
+            </div>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="400">
+              <div class="icon"><i class="bi bi-hand-thumbs-up" style="color: #d6ff22;font-size:50px;margin-left:30px"></i></div>
+              <h4 class="title"><a href="">GOLD LOAN SCHEMES</a></h4>
+              <p class="description">Star Ultimate Loan, Delight Loan, Super Saver Scheme, Advantage Loan</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="500">
+              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;font-size:50px;margin-left:30px"></i></div>
+              <h4 class="title"><a href="">QUICK LOAN</a></h4>
+              <p class="description">Loan approval in 5 minutes.loan disbursal in 30 minutes</p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </section><!-- End Services Section -->
+  
+  
+  
+  
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+  
+        <div class="section-title" data-aos="zoom-out">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+  
+        <ul class="faq-list">
+  
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is the eligibility criterion to qualify for a gold loan? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                For a gold loan, applicants should be aged above 18 years and should have gold that needs to be mortgaged with the bank.
+              </p>
+            </div>
+          </li>
+  
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question"> How long does it take to complete the gold loan approval process? <i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The loan approval process for gold loan is very fast. If your application meets all the requirements, it takes just an hour for the loan amount to be disbursed.
+              </p>
+            </div>
+          </li>
+  
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question"> What is the repayment tenure of a gold loan? <i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Depending upon who your lender is, a gold loan can be repaid in as less as 1 day to 48 part payment installments.
+              </p>
+            </div>
+          </li>
+  
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Are there any foreclosure charges on a gold loan? <i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Loan foreclosure charges range from 0%-3% and are applicable on the outstanding amount of your gold loan.
+              </p>
+            </div>
+          </li>
+  
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">How can the pledged gold against the loan be reclaimed? <i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                It’s very simple to reclaim deposited gold. Plan your loan repayment efficiently and ensure you do not default. Failure to repay the loan in the stipulated time will result in auctioning of your gold ornaments.
+              </p>
+            </div>
+          </li>
+  
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What medium should I use to repay the loan? <i class="bi bi-chevron-down icon-show"></i><i
+                class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The loan can be repaid by choosing any medium of money transfer through Online Fund Transfer.
+              </p>
+            </div>
+          </li>
+  
+        </ul>
+  
+      </div>
+    </section><!-- End F.A.Q Section -->
+  
+  
+  
+  
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+  
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+  
+        <div class="row mt-5">
+  
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>No 07 New Street, Ashok pillar, Chennai
+                   -083</p>
+              </div>
+  
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>support@starfinance.com</p>
+              </div>
+  
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9710526060</p>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+  
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+    </section><!-- End Contact Section -->
+  
+  </main>
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Star Finance</h3>
+      <p>Star Finance is the right mortgage at the right time at the right price.</p>
+      <div class="social-links">
+        <a class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a class="twitter"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Star Finance</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+      </div>
+    </div>
+  </footer>
